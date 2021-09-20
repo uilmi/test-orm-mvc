@@ -2,21 +2,21 @@
   "development": {
     "username": "binar",
     "password": "keren",
-    "database": "ulul_db_challenge",
+    "database": "ulul_challenge",
     "host": "sql.madecanggih.dev",
     "dialect": "postgres"
   },
   "test": {
    "username": "binar",
     "password": "keren",
-    "database": "ulul_db_challenge",
+    "database": "ulul_challenge",
     "host": "sql.madecanggih.dev",
     "dialect": "postgres"
   },
   "production": {
     "username": "binar",
     "password": "keren",
-    "database": "ulul_db_challenge",
+    "database": "ulul_challenge",
     "host": "sql.madecanggih.dev",
     "dialect": "postgres"
   }
