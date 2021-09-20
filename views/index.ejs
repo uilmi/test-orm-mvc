@@ -1,0 +1,247 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1 - Ulul Ilmi</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Section One-Main -->
+    <section id="section-main">
+        <nav id="navbar">
+            <div id="logo">
+                <a href="./index.html"><img src="./assets/img/LOGO.png" alt="Logo"></a>
+            </div>
+            <div id="menu-link">
+                <a href="#">HOME</a>
+                <a href="#">WORK</a>
+                <a href="#">CONTACT</a>
+                <a href="#section-about">ABOUT ME</a>
+            </div>
+            <div id="menu-right">
+                <a href="#">SIGN UP</a>
+                <a href="#">LOGIN</a>
+            </div>
+        </nav>
+        <!-- Hero Text -->
+        <div id=center-box>
+            <h1>Play traditional game</h1>
+            <h3>Experience new traditional game play</h1>
+                <button class="button"><a href="<%= linkGame %>" style="color:black"><span>PLAY
+                            NOW</span></a></button>
+        </div>
+        <div id="scroll-down">
+            <a href="#section-about">THE STORY</a>
+        </div>
+    </section>
+    <!-- End of Section One -->
+
+    <!-- Section Two-About -->
+    <section id="section-about">
+        <div id="second-grid-container">
+            <div id="slider-text-box">
+                <h3>What’s so special?</h3>
+                <h2>THE GAMES</h2>
+            </div>
+            <div class="slider-container">
+                <img class="mySlides" src="./assets/img/rockpaperstrategy1.jpg">
+                <img class="mySlides" src="./assets/img/rockpaperstrategy2.jpg">
+                <img class="mySlides" src="./assets/img/rockpaperstrategy3.jpg">
+                <img class="mySlides" src="./assets/img/rockpaperstrategy4.jpg">
+                <img class="mySlides" src="./assets/img/rockpaperstrategy5.jpg">
+
+                <div class=" slide-center slide-large slide-text-white bottom-gallery" style="width:100%">
+                    <div class="slide-left slide-text-khaki" onclick="plusDivs(-1)">&#5130;</div>
+                    <div class="slide-right slide-text-khaki" onclick="plusDivs(1)">&#5125;</div>
+                    <span class="slide-badge sliderku slide-border slide-transparent slide-hover-white"
+                        onclick="currentDiv(1)"></span>
+                    <span class="slide-badge sliderku slide-border slide-transparent slide-hover-white"
+                        onclick="currentDiv(2)"></span>
+                    <span class="slide-badge sliderku slide-border slide-transparent slide-hover-white"
+                        onclick="currentDiv(3)"></span>
+                    <span class="slide-badge sliderku slide-border slide-transparent slide-hover-white"
+                        onclick="currentDiv(4)"></span>
+                    <span class="slide-badge sliderku slide-border slide-transparent slide-hover-white"
+                        onclick="currentDiv(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section Two -->
+
+    <!-- Section Three-Features -->
+    <section id="section-feature">
+        <div class="third-grid-container">
+
+            <div class="item1">
+                <h3>What’s so special?</h3>
+                <h2>FEATURES</h2>
+            </div>
+            <div class="item2">
+                <span class="feature-badge feature-white feature-border feature-transparent feature-hover-white"
+                    onclick="currentDiv(1)"></span>
+                <img class="progressbar" src="./assets/img/progressbar.png" alt="progress-bar">
+                <h3 class="circle-text">TRADITIONAL GAMES</h3>
+                <p>If you miss your childhood, we provide many traditional games here</p>
+            </div>
+            <div class="item3">
+                <span class="feature-badge feature-border feature-transparent feature-hover-white"
+                    onclick="currentDiv(1)"></span>
+                <h3 class="circle-text">GAME SUIT</h3>
+                <!-- <p>If you miss your childhood, we provide many traditional games here</p> -->
+            </div>
+            <div class="item4">
+                <span class="feature-badge feature-border feature-transparent feature-hover-white"
+                    onclick="currentDiv(1)"></span>
+                <h3 class="circle-text">TBD</h3>
+                <!-- <p>If you miss your childhood, we provide many traditional games here</p> -->
+            </div>
+        </div>
+    </section>
+    <!-- End of Section Three -->
+
+    <!-- Section Four-Requirements -->
+    <section id="section-requirements">
+        <div class="sub-text">
+            <h3>Can My Computer Run this game?</h3>
+        </div>
+        <div id="sys-text-box">
+            <h2>SYSTEM</br>REQUIREMENTS</h2>
+        </div>
+        <div class="fourth-grid-container">
+            <img class="disquette" src="./assets/img/disquette.svg" alt="disquette">
+            <div class="item-feature1">
+                <h3 class="text-q req-text">OS:</h3>
+                <p class="text-s">Windows 7 64-bit only (No OSX support at this time)</p>
+            </div>
+            <div class="item-feature2">
+                <h3 class="text-q req-text">PROCESSOR:</h3>
+                <p class="text-s">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+            </div>
+            <div class="item-feature3">
+                <h3 class="text-q req-text">MEMORY:</h3>
+                <p class="text-s">4 GB RAM</p>
+            </div>
+            <div class="item-feature4">
+                <h3 class="text-q req-text">STORAGE:</h3>
+                <p class="text-s">8 GB available space</p>
+            </div>
+            <div class="item-feature5">
+                <h3 class="text-q req-text">GRAPHICS:</h3>
+                <p class="text-s">NVIDIA GeForce GTX 660 2GB or
+                    AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section Four -->
+
+    <!-- Section Five-Top Scores -->
+    <section id="section-top-scores">
+        <div id="fifth-grid-container">
+            <div id="slider-text-box">
+                <h2>TOP SCORES</h2>
+                <p>This top score from various games provided on this platform</p>
+                <button class="button" onclick="window.location.href='./index.html'"><span>SEE MORE</span></button>
+            </div>
+            <div class="item-testi1">
+                <img src="./assets/img/quote-1.png" alt="">
+            </div>
+            <div class="item-testi2">
+                <img src="./assets/img/quote-2.png" alt="">
+            </div>
+            <div class="item-testi3">
+                <img src="./assets/img/quote-3.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End of Section Five -->
+
+    <!-- Section Six-Newsletter -->
+    <section id="section-newsletter">
+        <div id="six-grid-container">
+            <div id="newsletter-text-box">
+                <img src="./assets/img/news.png" alt="news">
+            </div>
+            <div class="item-news1">
+                <h3>Want to stay in</br>touch?</h3>
+            </div>
+            <div class="item-news2">
+                <h2>NEWSLETTER</Br>SUBSCRIBE</h2>
+                <p>In order to start receiving our news, all you have to do is enter your email address. Everything else
+                    will be taken care
+                    of by us. We will send you emails containing information about game. We don’t spam.</p>
+
+            </div>
+            <div class="item-news3">
+                <form>
+                    <label>Your email address</label>
+                    <input type="text" placeholder="youremail@binar.co.id">
+                    <button class="submit-button" onclick="window.location.href='./index.html'"><span>Subscribe
+                            now</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section Six -->
+    <footer id="footer">
+        <div id="footer-grid-container">
+            <div class="menu-footer1">
+                <a href="#section-main">MAIN</a>
+                <a href="#section-about">ABOUT</a>
+                <a href="#section-feature">GAME FEATURES</a>
+                <a href="#section-requirements">SYSTEM REQUIREMENTS</a>
+                <a href="#section-top-scores">QUOTES</a>
+            </div>
+            <div class="menu-footer2">
+                <a href="#" target="_blank"><img src="./assets/img/facebook-low.svg" alt="fb"></a>
+                <a href="#" target="_blank"><img src="./assets/img/twitter-low.svg" alt="twitter"></a>
+                <a href="#" target="_blank"><img src="./assets/img/youtube-low.svg" alt="twitter"></a>
+                <a href="#" target="_blank"><img src="./assets/img/twitch.svg" alt="twitter"></a>
+            </div>
+            <span class="line"></span>
+
+            <div class="menu-footer3">
+                <p>© 2021 Your Games, Inc. All Rights Reserved</p>
+            </div>
+            <div class="menu-footer4">
+                <a href="#">PRIVACY POLICY |</a><a href="#"> TERMS OF SERVICES |</a><a href="#"> CODE OF CONDUCT</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("sliderku");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" slide-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " slide-white";
+    }
+</script>
+
+</html>
