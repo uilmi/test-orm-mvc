@@ -13,15 +13,19 @@ You might config the db setup `config/config.json` to your local db.
 
    `git clone https://github.com/uilmi/Challenge4-ORM.git`
 
-2. Install dependencies
+2. Change directory
+
+   `cd Challenge4-ORM`
+
+3. Install dependencies
 
    `npm install`
 
-3. Run the app
+4. Run the app
 
    `npm run dev`
 
-4. Access the app on your browser using this URL
+5. Access the app on your browser using this URL
 
    `http://localhost:3000`
 
