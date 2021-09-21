@@ -22,13 +22,11 @@
         <div class="my-3">
         <ol>
         <% users.forEach((user)=> { %>
-           
-           
                     <div>
                         <li>
                             <p>Username: <%= user.username %></p>
                             <p>Name: <%= user.user_biodata.name %></p>
-                            <p>Result: <%= user.user_history.result %></p>
+                            <p>Score: <%= user.user_history.result %></p>
                         </li>
                         <a href="/users/<%= user.id %>"><button type="button" class="btn btn-primary">Profile</button></a>
                         <a href="/users/update/<%= user.id %>"><button type="button" class="btn btn-success">Update</button></a>
