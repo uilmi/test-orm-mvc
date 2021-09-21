@@ -2,7 +2,7 @@
 
 ## Instalation
 
-This app is connected to postgres DB life server (dev mode):
+This app is connected to postgres DB live server (dev mode):
 
      "database": "ulul_challenge",
      "host": "sql.madecanggih.dev"
