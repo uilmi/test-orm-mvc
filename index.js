@@ -180,5 +180,5 @@ app.get('/users/', (req, res) => {
 
 // SERVER
 app.listen(PORT, () => {
-    console.log(`Server ready -> ${LOCALHOST}:${PORT} `);
+    console.log(`Ready to serve you my master -> ${LOCALHOST}:${PORT} `);
 });
