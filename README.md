@@ -9,12 +9,12 @@ This app is connected to postgres DB on this server (dev mode):
 
 1. Clone this repository
 
-   git clone https://github.com/uilmi/Challenge4-ORM.git
+   `git clone https://github.com/uilmi/Challenge4-ORM.git`
 
 2. Install dependency
 
-   npm install
+   `npm install`
 
 3. Run th app
 
-   npm run dev
+   `npm run dev`
