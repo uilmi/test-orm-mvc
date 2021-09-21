@@ -11,10 +11,14 @@ This app is connected to postgres DB on this server (dev mode):
 
    `git clone https://github.com/uilmi/Challenge4-ORM.git`
 
-2. Install dependency
+2. Install dependencies
 
    `npm install`
 
-3. Run th app
+3. Run the app
 
    `npm run dev`
+
+4. Access the app on your browser using this URL
+
+   `http://localhost:3000`
