@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'user_id',
         as: 'user_biodata',
       })
-      user_game.hasMany(models.user_game_history, {
+      user_game.hasOne(models.user_game_history, {
         foreignKey: 'user_id',
         as: 'user_history',
       })

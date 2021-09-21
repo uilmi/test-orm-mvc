@@ -62,11 +62,17 @@ app.post('/signup', (req, res) => {
         user_game_biodata.create({
             name: req.body.name,
             user_id: user.id,
+        }).then((user) => {
+            user_game_history.create({
+                result: req.body.result,
+                user_id: user.id,
+            })
+            res.redirect('/dashboard');
+
         })
-        res.redirect('/dashboard');
+
     })
 })
-
 app.get('/signup/', (req, res) => {
     res.render('users/signup');
 })
@@ -91,7 +97,7 @@ app.get('/dashboard', async (req, res) => {
 
 // VIEW PROFILE BY ID
 app.get('/users/:id', (req, res) => {
-    const usersID = user_game.findOne({
+    user_game.findOne({
         include: [
             { model: user_game_biodata, as: 'user_biodata' },
             { model: user_game_history, as: 'user_history' }
@@ -119,27 +125,37 @@ app.post('/users/update/:id', (req, res) => {
     user_game.update({
         username: req.body.username,
         password: req.body.password
-    },
-        { where: { id: req.body.id } }
-    ).then((users) => {
+    }).then((user) => {
         user_game_biodata.update({
             name: req.body.name,
-            user_id: users.id,
+            user_id: user.id,
+        }).then((user) => {
+            user_game_history.update({
+                result: req.body.result,
+                user_id: user.id,
+            })
+            res.redirect('/dashboard');
+
         })
 
-        res.redirect('/dashboard');
     })
 })
 
 // REMOVE USER
 app.get('/users/delete/:id', (req, res) => {
-    const userBiodata = user_game_biodata.destroy({
+    user_game_biodata.destroy({
         where: {
             user_id: req.params.id,
         },
     })
 
-    const userGame = user_game.destroy({
+    user_game_history.destroy({
+        where: {
+            user_id: req.params.id,
+        },
+    })
+
+    user_game.destroy({
         where: { id: req.params.id }
     }).then(() => {
         res.redirect('/dashboard');
