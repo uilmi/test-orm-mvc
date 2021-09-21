@@ -7,7 +7,7 @@ This app is connected to postgres DB live server (dev mode):
      "database": "ulul_challenge",
      "host": "sql.madecanggih.dev"
 
-DB will soon will be delated, so you might want to config the db setup `config/config.json` to your local db.
+DB will soon be delated, so you might want to config the db setup `config/config.json` to your local db.
 
 1. Clone this repository
 
