@@ -14,10 +14,17 @@
 <body>
     <div class="container-fluid col-6  my-5 p-3 bg-light text-dark shadow-lg mb-5 bg-body rounded">
         <h1>Hi, <%= users.username %>!</h1>
-        <p>Full Name: <%= users.user_biodata.name %></p>
-        <p>Username: <%= users.username %></p>
-        <p>Score: <%= users.user_history.result %></p>
-        <a href="/dashboard">BACK</a>
+        <div class="mt-5 lead">
+            <p>Full Name: <%= users.user_biodata.name %>
+            </p>
+            <p>Your Score: <%= users.user_history.result %>
+            </p>
+        </div>
+        
+     
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="/dashboard"><button class="btn btn-primary me-md-2" type="button">BACK</button></a>
+        </div>
     </div>
 </body>
 

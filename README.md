@@ -7,7 +7,7 @@ This app is connected to postgres DB on below server (dev mode):
      "database": "ulul_challenge",
      "host": "sql.madecanggih.dev"
 
-You might config the db setup `config/config.json`
+You might config the db setup `config/config.json` to your local db.
 
 1. Clone this repository
 
