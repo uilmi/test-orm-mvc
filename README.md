@@ -7,6 +7,8 @@ This app is connected to postgres DB on below server (dev mode):
      "database": "ulul_challenge",
      "host": "sql.madecanggih.dev"
 
+You might config the db setup `config/config.json`
+
 1. Clone this repository
 
    `git clone https://github.com/uilmi/Challenge4-ORM.git`
