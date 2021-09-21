@@ -7,7 +7,7 @@ This app is connected to postgres DB live server (dev mode):
      "database": "ulul_challenge",
      "host": "sql.madecanggih.dev"
 
-     "(Soon will be delated)"
+     Soon will be delated ☝️
 
 You might config the db setup `config/config.json` to your local db.
 
