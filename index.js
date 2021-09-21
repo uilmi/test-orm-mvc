@@ -125,21 +125,33 @@ app.post('/users/update/:id', (req, res) => {
     user_game.update({
         username: req.body.username,
         password: req.body.password
-    }).then((user) => {
+    }, {
+        where: {
+            id: req.params.id,
+        },
+    }).then(() => {
         user_game_biodata.update({
             name: req.body.name,
-            user_id: user.id,
-        }).then((user) => {
+
+        }, {
+            where: {
+                user_id: req.params.id,
+            },
+        }).then(() => {
             user_game_history.update({
                 result: req.body.result,
-                user_id: user.id,
-            })
-            res.redirect('/dashboard');
 
+            }, {
+                where: {
+                    user_id: req.params.id,
+                },
+            }).then((user) => {
+                res.redirect('/dashboard');
+            });
         })
-
     })
 })
+
 
 // REMOVE USER
 app.get('/users/delete/:id', (req, res) => {
