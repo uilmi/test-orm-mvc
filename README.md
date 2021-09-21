@@ -32,7 +32,7 @@ You might config the db setup `config/config.json` to your local db.
 ## Features
 
 - Create, View, Update and Remove User
-- User Dashboard `/dashboard`
+- Users Dashboard `/dashboard`
 - Fungsi CRUD untuk tabel `user_game` dengan API ExpressJS.
 - Menghubungkan API dengan views `ejs`
 - Bisa menyimpan ke `user_game_biodata` menggunakan Foreign Key
