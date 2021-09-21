@@ -1,8 +1,8 @@
 # Challenge Ch. 6 - Database & ORM
 
-Challenge Ch. 6 - Database dan ORM
+## Instalation
 
-This app is connected to postgres DB on this server (dev mode):
+This app is connected to postgres DB on below server (dev mode):
 
      "database": "ulul_challenge",
      "host": "sql.madecanggih.dev"
@@ -22,3 +22,12 @@ This app is connected to postgres DB on this server (dev mode):
 4. Access the app on your browser using this URL
 
    `http://localhost:3000`
+
+## Features
+
+- Create, View, Update and Remove User
+- User Dashboard `/dashboard`
+- Fungsi CRUD untuk tabel `user_game` dengan API ExpressJS.
+- Menghubungkan API dengan views `ejs`
+- Bisa menyimpan ke `user_game_biodata` menggunakan Foreign Key
+- Bisa menyimpan ke `user_game_biodata` menggunakan Foreign Key & Associate
