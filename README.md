@@ -29,6 +29,10 @@ You might config the db setup `config/config.json` to your local db.
 
    `http://localhost:3000`
 
+6. Access the sign in & sign up on the right corener
+
+   `Login` & `Sign Up`
+
 ## Features
 
 - Create, View, Update and Remove User
